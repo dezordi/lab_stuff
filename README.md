@@ -9,7 +9,7 @@ This repository contains general scripts to automatize routine tasks of my work 
 - To assembly mitogenomes using a reference-guided approach with MITObim.
 > bash mito.sh <reference_genome> <fastq1> <fastq2> <adapter_path/adapter_file> <trimmomatic_path/trimmomatic_jar> </home/user/mira_path/> <num_threads>
 
-> example line: bash auto_mito.sh ref_genome1.fasta sracode_1.fastq sracode_2.fastq Trimmomatic-0.36/adapters/adapter_file.fa /home/user/softwares/mira_4.0.2/ 8
+> example line: bash mito.sh ref_genome1.fasta sracode_1.fastq sracode_2.fastq Trimmomatic-0.36/adapters/adapter_file.fa ~/softwares/Trimmomatic-0.36/trimmomatic-0.36.jar /home/user/softwares/mira_4.0.2/ 8
 
 - To automatize auto_mito.sh
 > bash auto_mito.sh <genomes_fastq_adapters.lst> <path/trimmomatic> <path/mira> <num_threads>
