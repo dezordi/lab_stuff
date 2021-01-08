@@ -15,6 +15,9 @@ This repository contains general scripts to automatize routine tasks of my work 
 > bash auto_mito.sh <genomes_fastq_adapters.lst> <path/trimmomatic> <path/mira> <num_threads>
 
 > example line: bash auto_mito.sh genomes_fastq_adapters.lst ~/softwares/Trimmomatic-0.36/trimmomatic-0.36.jar /home/user/softwares/mira_4.0.2/ 8
+
+- To download fastq files from a file with a number or SRA codes
+> bash sra.sh <sra_file_list.txt>
 ## Disclaimer
 - I'm not a computer engineer or some related profession, I'm just write this script to study python and to automatize some bioinformatics tasks. So fell free to commit changes that makes the code more efficient or more clean.
 - This repository will be constantly updated
