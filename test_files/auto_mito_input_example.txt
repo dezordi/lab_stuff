@@ -1,0 +1,3 @@
+refence_genome1.fasta:SRACODE1_1.fastq:SRACODE1_2.fastq:~/softwares/Trimmomatic-0.36/adapters/adapter_file.fa
+refence_genome2.fasta:SRACODE2_1.fastq:SRACODE2_2.fastq:~/softwares/Trimmomatic-0.36/adapters/adapter_file.fa
+refence_genome3.fasta:SRACODE3_1.fastq:SRACODE3_2.fastq:~/softwares/Trimmomatic-0.36/adapters/adapter_file.fa
