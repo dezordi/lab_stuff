@@ -3,14 +3,12 @@
 ###############################>GENERAL-INFORMATIONS<###############################
 """
 Build in Python 3.6
-
 Authors:
 Filipe Dezordi
 zimmer.filipe@gmail.com
 https://github.com/dezordi
 Yago Dias
 yag.dias@gmail.com
-
 08 Jan. 2021
 """
 ####inserir input, argumentos
@@ -19,6 +17,7 @@ parser = argparse.ArgumentParser(description = "This script convert the LTR-Find
 parser.add_argument("-in", "--input", help="LTR-Finder output", required=True)
 args = parser.parse_args()
 input_file = args.input
+
 
 ####cria o arquivo de output e o cabeçaho cabeçalho
 csv_output = open(input_file+'.csv','w')
@@ -84,10 +83,11 @@ with open(input_file,'r') as ltr_finder_output:
         tsr = re.sub(r'\[.*\]','',tsr)
         tsr = re.sub(r'\s,\s','/',tsr)
         tsr = re.sub(r'\s-\s',':',tsr)
+        tsr = re.sub(r'\s','',tsr)
       if "Sharpness" in line:
         sharpness = re.sub(r'.*:\s','',line).rstrip('\n')
         sharpness = re.sub(',','/',sharpness)
-      if "PPT" in line:
+      if "PPT " in line:
         ppt = re.sub(r'.*\]\s','',line).rstrip('\n')
         ppt = re.sub(r'\s-\s',':',ppt)
         list_lists.append([sequence,location,length,strand,ltr_similarity,ltr5_pos,ltr5_len,ltr3_pos,ltr3_len,tsr,sharpness,ppt]) 
