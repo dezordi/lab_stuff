@@ -50,9 +50,14 @@ Usage
     #example line for proteins:
     python cd_hit_formated.py -in sequences.fasta -p 16 -m 60000 -cd "-c 0.8 -aL 0.8 -g 1 -d 200" -md prot
 
+**To execute DNAsp2tsv.py**
+
+.. code:: bash
+
+    python DNAsp2tsv.py -in DNAsp_output.txt
+    
 ==========
 Disclaimer
 ==========
-- I'm not a computer engineer or some related profession, I'm just writing this script to study python and to automatize some bioinformatics tasks. So feel free to commit changes that make the code more efficient or cleaner.
 
 - This repository will be constantly updated.
