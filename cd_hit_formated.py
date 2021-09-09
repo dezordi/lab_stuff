@@ -21,8 +21,8 @@ import argparse, csv, os, subprocess, shlex, sys, time, re
 ###############################>ARGUMENTS<###############################
 parser = argparse.ArgumentParser(description = 'This scripts receives a fasta file and execute a cd-hit-est analysis and formats the cd-hit output',formatter_class=argparse.RawTextHelpFormatter)
 parser.add_argument("-in", "--input", help="Fasta file", required=True)
-parser.add_argument("-p","--threads",help="Threads for cd-hit-est analyze. Default = 1", default = 1, type=str)
-parser.add_argument("-m","--memory",help="Memory in MB for cd-hit-est analyze. Default = 2000",default = 2000, type=str)
+parser.add_argument("-p","--threads",help="Threads for cd-hit-est analyze. Default = 1", default = str(1), type=str)
+parser.add_argument("-m","--memory",help="Memory in MB for cd-hit-est analyze. Default = 2000",default = str(2000), type=str)
 parser.add_argument("-md","--mode",help="CD-hit mode, options: nucl or prot. Default = nucl",type=str, choices=['nucl','prot'], default='nucl')
 parser.add_argument("-cd","--cdhit",help="CD-hit line arguments eg. '-c 0.8 -aL 0.8 -g 1 -n 8 -d 200'",type=str)
 #Storing argument on variables
