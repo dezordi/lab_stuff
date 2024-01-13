@@ -56,6 +56,13 @@ Usage
 
     python DNAsp2tsv.py -in DNAsp_output.txt
     
+
+**To execute nwk2nexus.py**
+
+.. code:: bash
+
+    python nwk2nexus.py -in tree.nwk -o tree.nexus
+
 ==========
 Disclaimer
 ==========
